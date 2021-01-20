@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs'
 const data = {
+    users: [
+        {
+            name:'alex',
+            email:'admin@example.com',
+            password: bcrypt.hashSync('1245', 8),
+            isAdmin: true,
+        },
+        {
+            name:'jon',
+            email:'user@example.com',
+            password: bcrypt.hashSync('1234', 8),
+            isAdmin: false,
+        },
+    ],
     products: [
         {
-            _id:'1',
+            
             name:'Adidas Hoodies',
             category: 'Shirts',
             image:'/images/p1.jpg',
@@ -13,7 +28,7 @@ const data = {
             description:'high quality product',
         },
         {
-            _id:'2',
+            
             name:'Nike Fit Shirt',
             category: 'Shirts',
             image:'/images/p2.jpg',
@@ -25,7 +40,7 @@ const data = {
             description:'high quality product',
         },
         {
-            _id:'3',
+            
             name:'Lacoste Pants',
             category: 'Pants',
             image:'/images/p3.jpg',
@@ -37,8 +52,8 @@ const data = {
             description:'high quality product',
         },
         {
-            _id:'4',
-            name:'Adidas Hoodies',
+            
+            name:'Puma Hoodies',
             category: 'Shirts',
             image:'/images/p4.jpg',
             price: 220,
@@ -49,8 +64,8 @@ const data = {
             description:'high quality product',
         },
         {
-            _id:'5',
-            name:'Adidas Hoodies',
+            
+            name:'CK Hoodies',
             category: 'Shirts',
             image:'/images/p5.jpg',
             price: 120,
@@ -61,8 +76,8 @@ const data = {
             description:'high quality product',
         },
         {
-            _id:'6',
-            name:'Adidas Hoodies',
+            
+            name:'DG Hoodies',
             category: 'Shirts',
             image:'/images/p6.jpg',
             price: 140,
