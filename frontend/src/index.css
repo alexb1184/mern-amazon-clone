@@ -237,7 +237,7 @@ background-color: #e0e0ff;
 
 .form label {
   margin: 1rem 0;
-  display: block;
+ 
 }
 
 /* Dropdown */
@@ -261,4 +261,18 @@ background-color: #e0e0ff;
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*checkout Steps*/
+.checkout-steps > div {
+  border-top: 0.3rem solid #000;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.checkout-steps > div.active {
+  border-top-color: #f08000;
+  color:  #f08000;
 }

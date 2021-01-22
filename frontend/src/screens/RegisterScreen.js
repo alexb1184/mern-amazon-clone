@@ -41,7 +41,7 @@ if(userInfo){
         <div>
             <form className="form" onSubmit={submitHandler} >
             <div>
-                <h1>Register</h1>
+                <h1>Create Account</h1>
             </div>
             {loading && <LoadingBox></LoadingBox>}
             {error && <MessageBox variant="danger" >{error}</MessageBox> }
@@ -95,7 +95,7 @@ if(userInfo){
                 <label/>
                 <div>
                         Already have an account ? 
-                    <Link to="/signin">Sign In</Link>
+                    <Link to={`/signin?redirect=${redirect}`}>Sign In</Link>
                 </div>
             </div>
             </form>
